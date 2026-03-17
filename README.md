@@ -14,7 +14,7 @@ The core implementation consists of the following modules:
   Entry point of the algorithm. It defines the problem instance and runs the optimization process.
 
 - `SAMA_RL.py`  
-  Main algorithm framework based on a multi-objective evolutionary algorithm (Geatpy-based).  
+  Main algorithm framework based on a multi-objective evolutionary algorithm.  
   Includes:
   - population evolution
   - non-dominated sorting
@@ -30,11 +30,11 @@ The core implementation consists of the following modules:
   - constraint evaluation (maintenance, slot capacity, etc.)
 
 - `Local_Search.py`  
-  Local search and repair operators.  
+  Local search operators.  
   Includes:
-  - flight insertion (`Here_Insert`) :contentReference[oaicite:0]{index=0}
-  - flight exchange (`Here_Cross`)
-  - cancellation and repair strategies
+  - flight insertion
+  - flight exchange
+  - cancellation
 
 ---
 
@@ -44,8 +44,3 @@ The core implementation consists of the following modules:
 - NumPy
 - Pandas
 - Geatpy
-
-Install dependencies:
-
-```bash
-pip install numpy pandas geatpy
